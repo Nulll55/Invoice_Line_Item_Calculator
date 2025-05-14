@@ -28,8 +28,8 @@ def main():
     print("The Invoice Line TIem Calcuator\n")
     answer = "y"
     while answer.lower() =="y":
-        price = get_price
-        quantity = get_quantity
+        price = get_price()
+        quantity = get_quantity()
         total = price * quantity
         display_info(price, quantity, total)
         answer = input("Enter another line item? (y/n): ")
@@ -39,6 +39,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
